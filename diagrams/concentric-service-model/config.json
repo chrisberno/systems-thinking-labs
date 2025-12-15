@@ -1,0 +1,97 @@
+{
+  "id": "concentric-service-model",
+  "name": "Concentric Service Model",
+  "subtitle": "Platform Ecosystem Architecture for Community-Based Organizations",
+  "category": "platform-ecosystems",
+  "useCases": [
+    "nonprofit-board-presentations",
+    "cbo-internal-alignment",
+    "investor-communication",
+    "partner-integration",
+    "staff-onboarding",
+    "platform-architecture-overview"
+  ],
+  "description": "A Platform Ecosystem Diagram showing how the platform wraps community touchpoints around a cyclical engagement engine (CONNECT \u2192 ENGAGE \u2192 SERVE), with data flowing through an ecosystem network to a central data layer.",
+  "version": "v5a",
+  "versions": {
+    "v1": "Original static concentric model",
+    "v2": "Added clockwise flow (CONNECT \u2192 ENGAGE \u2192 SERVE)",
+    "v3": "Baseline for visual experiments",
+    "v3d": "Halftone dot effect breakthrough",
+    "v4": "Static halftone baseline (print-ready)",
+    "v5a": "Animated + professional polish (current)"
+  },
+  "technologies": ["SVG", "CSS Keyframes", "Python"],
+  "files": {
+    "current": "concentric-service-model-v5a.svg",
+    "static": "concentric-service-model-v4.svg",
+    "video": "systems-architecture-platform-ecosystem-diagram-v5a.mov",
+    "notes": "notes.md",
+    "generator": "../../code/generators/halftone_generator.py"
+  },
+  "links": {
+    "blogUrl": "https://chrisberno.com/blog/systems-thinking-for-stakeholders",
+    "projectUrl": "https://chrisberno.com/projects/systems-thinking-labs",
+    "githubUrl": "https://github.com/chrisberno/systems-thinking-labs/tree/main/diagrams/concentric-service-model"
+  },
+  "tags": [
+    "concentric",
+    "platform",
+    "ecosystem",
+    "systems-thinking",
+    "nonprofit-tech",
+    "animated",
+    "process-flow",
+    "halftone",
+    "cbo"
+  ],
+  "designPrinciples": [
+    "Concentric rings show layered architecture (outside-in)",
+    "Clockwise flow suggests continuous improvement cycle",
+    "Halftone dots represent data/influence emanating outward",
+    "Reversed wave animation shows inbound flow (community \u2192 platform)",
+    "Bidirectional API arrows show two-way data exchange",
+    "Near-black typography for maximum contrast and readability"
+  ],
+  "layers": [
+    {
+      "name": "Community Connection Layer",
+      "description": "The front door - where the community already lives (phone, text, web, social)"
+    },
+    {
+      "name": "CONNECT \u2192 ENGAGE \u2192 SERVE",
+      "description": "The cyclical engine - continuous relationship, not linear process"
+    },
+    {
+      "name": "Ecosystem Network Layer",
+      "description": "The partner mesh - food banks, housing, healthcare, benefits systems"
+    },
+    {
+      "name": "API Layer",
+      "description": "Live nervous system - bidirectional data flows for compliance and integration"
+    },
+    {
+      "name": "Data Center",
+      "description": "Single source of truth - client history, interaction logs, outcome tracking"
+    }
+  ],
+  "inspiration": [
+    "World Economic Forum (WEF)",
+    "McKinsey & Company",
+    "Deloitte",
+    "World Health Organization (WHO)",
+    "Twilio",
+    "Salesforce"
+  ],
+  "recommendedUse": {
+    "print": "v4 (static halftone)",
+    "web": "v5a (animated)",
+    "presentations": "v5a or video export",
+    "powerpoint": "Video (.mov) with loop enabled"
+  },
+  "status": "production",
+  "dateCreated": "2025-12-13",
+  "dateUpdated": "2025-12-15",
+  "author": "Christopher Berno",
+  "license": "MIT"
+}
