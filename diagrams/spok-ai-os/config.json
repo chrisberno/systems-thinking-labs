@@ -1,0 +1,89 @@
+{
+  "id": "spok-ai-os",
+  "name": "The SPOK OS",
+  "title": "THE SPOK OS",
+  "subtitle": "An AI Operating System — soul made explicit, germline-sourced",
+  "category": "ai-operating-systems",
+  "version": "v0",
+  "status": "draft",
+  "versions": {
+    "v0": "First SPOK-native pass. 4 rings + 4 outcomes. Soul made explicit at the core; per-ring source tags (germline / local / rented). Generator-driven from this config."
+  },
+  "lineage": {
+    "inspiration": "Ben AI 'THE AI OS' onion (AI Agent / Context / Connectors / Capabilities)",
+    "divergence": "Ben collapses identity into the core and draws a single-org runtime view. SPOK makes SOUL explicit (4th outcome: 'carries your judgment') and tags each ring's SOURCE (the germline/warehouse view).",
+    "anchorTicket": "ONR-107",
+    "catalystVideo": "https://www.youtube.com/watch?v=zElKhlFkqU4"
+  },
+  "useCases": [
+    "spok-os-explainer",
+    "onreb-product-pitch",
+    "team-onboarding",
+    "investor-communication"
+  ],
+  "canvas": { "width": 1340, "height": 840, "cx": 392, "cy": 430 },
+  "_ringNote": "rings ordered OUTER -> INNER (drawing order). radius in px. fill = ring band. outcomeFill = matching right-side box (color is the visual mapping). accent=true gets the gold/star treatment.",
+  "rings": [
+    {
+      "id": "capabilities",
+      "label": "CAPABILITIES",
+      "sublabel": "skills · routines · loops",
+      "radius": 350,
+      "fill": "#E6D9B0",
+      "outcomeLabel": "SKILLS · ROUTINES · LOOPS",
+      "outcome": "AUTOMATES YOUR WORK",
+      "outcomeFill": "#E6D9B0",
+      "source": "germline · project-expressed"
+    },
+    {
+      "id": "connectors",
+      "label": "CONNECTORS",
+      "sublabel": "MCP",
+      "radius": 268,
+      "fill": "#F1EAD2",
+      "outcomeLabel": "CONNECTORS · MCP",
+      "outcome": "ACCESSES YOUR TOOLS",
+      "outcomeFill": "#F1EAD2",
+      "source": "central declare · per-machine auth"
+    },
+    {
+      "id": "context",
+      "label": "CONTEXT",
+      "sublabel": "second brain",
+      "radius": 188,
+      "fill": "#CDE3C6",
+      "outcomeLabel": "SECOND BRAIN",
+      "outcome": "UNDERSTANDS YOUR BUSINESS",
+      "outcomeFill": "#CDE3C6",
+      "source": "central brain · local nouns"
+    },
+    {
+      "id": "core",
+      "label": "AI AGENT",
+      "sublabel": "body + soul",
+      "radius": 100,
+      "fill": "#FFFFFF",
+      "outcomeLabel": "SOUL · JUDGMENT",
+      "outcome": "CARRIES YOUR JUDGMENT",
+      "outcomeFill": "#F6E6A8",
+      "accent": true,
+      "source": "body = rented · soul = germline"
+    }
+  ],
+  "designPrinciples": [
+    "Concentric rings = layered architecture (inside-out dependency: capabilities need connectors need context need an agent)",
+    "Box color matches its ring — color IS the visual mapping, so arrows can stay simple",
+    "Soul is explicit at the core (Body + Soul), not collapsed into the agent",
+    "Each ring carries a SOURCE tag — the runtime onion overlaid with the germline/warehouse view",
+    "Near-black typography for maximum contrast",
+    "Model lives in config.json; SVG is a disposable projection — edit data, never the picture"
+  ],
+  "technologies": ["SVG", "Python"],
+  "tags": ["concentric", "ai-os", "spok", "germline", "soul", "systems-thinking", "onion"],
+  "files": {
+    "model": "config.json",
+    "generator": "spok_ai_os.py",
+    "current": "spok-ai-os-v0.svg"
+  },
+  "graduation": "Canonical model graduates to the SPOK germline (~/SPOK) when spok.os packages. Prototype lives here in systems-thinking-labs."
+}

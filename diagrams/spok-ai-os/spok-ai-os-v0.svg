@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1340 840" width="1340" height="840" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+<defs><marker id="arr" markerWidth="11" markerHeight="11" refX="8" refY="3.2" orient="auto"><path d="M0,0 L8,3.2 L0,6.4 Z" fill="#555"/></marker></defs>
+<rect width="1340" height="840" fill="#ffffff"/>
+<text x="392" y="58" text-anchor="middle" font-size="36" font-weight="700" fill="#1a1a1a" letter-spacing="3">THE SPOK OS</text>
+<text x="392" y="84" text-anchor="middle" font-size="13" fill="#8a8a8a">An AI Operating System — soul made explicit, germline-sourced  ·  v0</text>
+<circle cx="392" cy="430" r="350" fill="#E6D9B0" stroke="#9a8f70" stroke-width="1.5"/>
+<circle cx="392" cy="430" r="268" fill="#F1EAD2" stroke="#9a8f70" stroke-width="1.5"/>
+<circle cx="392" cy="430" r="188" fill="#CDE3C6" stroke="#9a8f70" stroke-width="1.5"/>
+<circle cx="392" cy="430" r="100" fill="#FFFFFF" stroke="#9a8f70" stroke-width="1.5"/>
+<text x="392" y="110" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a1a" letter-spacing="1.2">CAPABILITIES</text>
+<text x="392" y="128" text-anchor="middle" font-size="11.5" fill="#5a5a5a" font-style="italic">skills · routines · loops</text>
+<text x="392" y="192" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a1a" letter-spacing="1.2">CONNECTORS</text>
+<text x="392" y="210" text-anchor="middle" font-size="11.5" fill="#5a5a5a" font-style="italic">MCP</text>
+<text x="392" y="272" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a1a" letter-spacing="1.2">CONTEXT</text>
+<text x="392" y="290" text-anchor="middle" font-size="11.5" fill="#5a5a5a" font-style="italic">second brain</text>
+<text x="392" y="426" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a1a">AI AGENT</text>
+<text x="392" y="447" text-anchor="middle" font-size="12.5" fill="#333">body + soul</text>
+<line x1="764" y1="150" x2="953" y2="150" stroke="#555" stroke-width="1.7" marker-end="url(#arr)"/>
+<text x="863" y="140" text-anchor="middle" font-size="11" fill="#6a6a6a" letter-spacing="0.6">SKILLS · ROUTINES · LOOPS</text>
+<rect x="962" y="114" width="352" height="72" rx="11" fill="#E6D9B0" stroke="#9a8f70" stroke-width="1.3"/>
+<text x="1138" y="147" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a1a">AUTOMATES YOUR WORK</text>
+<text x="1138" y="169" text-anchor="middle" font-size="10.5" fill="#7a7a7a" font-style="italic">source: germline · project-expressed</text>
+<line x1="764" y1="325" x2="953" y2="325" stroke="#555" stroke-width="1.7" marker-end="url(#arr)"/>
+<text x="863" y="315" text-anchor="middle" font-size="11" fill="#6a6a6a" letter-spacing="0.6">CONNECTORS · MCP</text>
+<rect x="962" y="289" width="352" height="72" rx="11" fill="#F1EAD2" stroke="#9a8f70" stroke-width="1.3"/>
+<text x="1138" y="322" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a1a">ACCESSES YOUR TOOLS</text>
+<text x="1138" y="344" text-anchor="middle" font-size="10.5" fill="#7a7a7a" font-style="italic">source: central declare · per-machine auth</text>
+<line x1="764" y1="500" x2="953" y2="500" stroke="#555" stroke-width="1.7" marker-end="url(#arr)"/>
+<text x="863" y="490" text-anchor="middle" font-size="11" fill="#6a6a6a" letter-spacing="0.6">SECOND BRAIN</text>
+<rect x="962" y="464" width="352" height="72" rx="11" fill="#CDE3C6" stroke="#9a8f70" stroke-width="1.3"/>
+<text x="1138" y="497" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a1a">UNDERSTANDS YOUR BUSINESS</text>
+<text x="1138" y="519" text-anchor="middle" font-size="10.5" fill="#7a7a7a" font-style="italic">source: central brain · local nouns</text>
+<line x1="764" y1="675" x2="953" y2="675" stroke="#555" stroke-width="1.7" marker-end="url(#arr)"/>
+<text x="863" y="665" text-anchor="middle" font-size="11" fill="#6a6a6a" letter-spacing="0.6">SOUL · JUDGMENT</text>
+<rect x="962" y="639" width="352" height="72" rx="11" fill="#F6E6A8" stroke="#caa53a" stroke-width="2.6"/>
+<text x="1138" y="672" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a1a">CARRIES YOUR JUDGMENT  ★</text>
+<text x="1138" y="694" text-anchor="middle" font-size="10.5" fill="#7a7a7a" font-style="italic">source: body = rented · soul = germline</text>
+<text x="392" y="818" text-anchor="middle" font-size="10.5" fill="#aaa">model: config.json  ·  render: spok_ai_os.py  ·  edit the data, never the picture</text>
+</svg>
