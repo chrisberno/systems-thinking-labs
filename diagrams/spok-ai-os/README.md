@@ -2,7 +2,7 @@
 
 **An AI Operating System — soul made explicit, germline-sourced.**
 
-![The SPOK OS](spok-ai-os-v0.svg)
+![The SPOK OS](spok-ai-os-v1.svg)
 
 ## Overview
 
@@ -52,7 +52,9 @@ re-run, commit the **data**. Diffs are readable JSON, not SVG noise.
 |------|---------|
 | `config.json` | **Source of truth** — metadata + the `rings[]` model |
 | `spok_ai_os.py` | Generator — `config.json` → SVG |
-| `spok-ai-os-v0.svg` | Current render |
+| `spok-ai-os-v1.svg` | Current render (grounded to real SPOK systems) |
+| `spok-ai-os-v0.svg` | First pass (generic Ben-style labels) |
+| `notes.md` | **Ring → folder mapping** — how each ring lines up with the real filesystem |
 
 ## Roadmap
 

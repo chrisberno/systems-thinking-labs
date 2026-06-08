@@ -4,10 +4,11 @@
   "title": "THE SPOK OS",
   "subtitle": "An AI Operating System — soul made explicit, germline-sourced",
   "category": "ai-operating-systems",
-  "version": "v0",
+  "version": "v1",
   "status": "draft",
   "versions": {
-    "v0": "First SPOK-native pass. 4 rings + 4 outcomes. Soul made explicit at the core; per-ring source tags (germline / local / rented). Generator-driven from this config."
+    "v0": "First SPOK-native pass. 4 rings + 4 outcomes. Soul made explicit at the core; per-ring source tags (germline / local / rented). Generator-driven from this config.",
+    "v1": "Grounded to the real machine: sublabels + source tags now name actual SPOK systems (deepspok, vaults, ~/SPOK/mcp, ~/SPOK/skills). Ring NAMES stay Ben's (teachable); sublabels/sources are ours (concrete). The diagram is now a map of the actual filesystem — and it visibly shows the two unfinished rings (Capabilities germline + Soul)."
   },
   "lineage": {
     "inspiration": "Ben AI 'THE AI OS' onion (AI Agent / Context / Connectors / Capabilities)",
@@ -33,7 +34,7 @@
       "outcomeLabel": "SKILLS · ROUTINES · LOOPS",
       "outcome": "AUTOMATES YOUR WORK",
       "outcomeFill": "#E6D9B0",
-      "source": "germline · project-expressed"
+      "source": "~/SPOK/skills/ — germline (pending)"
     },
     {
       "id": "connectors",
@@ -44,18 +45,18 @@
       "outcomeLabel": "CONNECTORS · MCP",
       "outcome": "ACCESSES YOUR TOOLS",
       "outcomeFill": "#F1EAD2",
-      "source": "central declare · per-machine auth"
+      "source": "~/SPOK/mcp/ + registered MCPs"
     },
     {
       "id": "context",
       "label": "CONTEXT",
-      "sublabel": "second brain",
+      "sublabel": "deepspok + vaults",
       "radius": 188,
       "fill": "#CDE3C6",
-      "outcomeLabel": "SECOND BRAIN",
+      "outcomeLabel": "THE BRAIN",
       "outcome": "UNDERSTANDS YOUR BUSINESS",
       "outcomeFill": "#CDE3C6",
-      "source": "central brain · local nouns"
+      "source": "deepspok (hippocampus) + vaults (cortex)"
     },
     {
       "id": "core",
@@ -67,7 +68,7 @@
       "outcome": "CARRIES YOUR JUDGMENT",
       "outcomeFill": "#F6E6A8",
       "accent": true,
-      "source": "body = rented · soul = germline"
+      "source": "body = rented · soul = CLAUDE.md + agents/"
     }
   ],
   "designPrinciples": [
