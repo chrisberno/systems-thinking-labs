@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPOK OS — Diagram Editor</title>
+<style>
+  :root { --bg:#f4f1e9; --panel:#ffffff; --line:#e3ddcb; --ink:#1a1a1a; --muted:#7a7a7a; --accent:#caa53a; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; color:var(--ink); background:var(--bg); }
+  header { display:flex; align-items:center; gap:14px; padding:10px 16px; background:var(--panel); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:5; }
+  header h1 { font-size:15px; margin:0; letter-spacing:1px; }
+  header .spacer { flex:1; }
+  header button { font:inherit; font-size:13px; padding:7px 13px; border:1px solid var(--line); background:#fbf9f2; border-radius:8px; cursor:pointer; }
+  header button.primary { background:var(--accent); border-color:#b8942e; color:#1a1a1a; font-weight:700; }
+  header button:hover { filter:brightness(0.97); }
+  header label { font-size:12px; color:var(--muted); display:flex; align-items:center; gap:5px; }
+  header input[type=number] { width:48px; font:inherit; padding:4px 6px; border:1px solid var(--line); border-radius:6px; }
+  #flash { font-size:12px; min-width:120px; }
+  #flash.ok { color:#3a7a3a; } #flash.bad { color:#b03030; }
+  main { display:grid; grid-template-columns:340px 1fr; height:calc(100vh - 53px); }
+  #controls { overflow-y:auto; padding:14px; border-right:1px solid var(--line); }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:12px; margin-bottom:12px; }
+  .card h3 { margin:0 0 9px; font-size:12.5px; letter-spacing:.5px; text-transform:uppercase; color:#555; }
+  .card.ring h3 { color:var(--ink); }
+  .ops { display:flex; gap:6px; margin-bottom:8px; }
+  .ops button { width:30px; height:26px; border:1px solid var(--line); background:#fbf9f2; border-radius:6px; cursor:pointer; font-size:13px; }
+  .ops button:disabled { opacity:.35; cursor:default; }
+  .fld { display:flex; flex-direction:column; gap:3px; margin-bottom:7px; }
+  .fld > span { font-size:11px; color:var(--muted); }
+  .fld input[type=text], .fld input[type=number] { font:inherit; font-size:13px; padding:6px 8px; border:1px solid var(--line); border-radius:6px; background:#fff; }
+  .fld.color { flex-direction:row; align-items:center; gap:8px; flex-wrap:wrap; }
+  .fld.color > span { flex:1 0 100%; }
+  .fld.color input[type=color] { width:38px; height:30px; padding:0; border:1px solid var(--line); border-radius:6px; background:#fff; }
+  .fld.color .hex { width:90px; font:inherit; font-size:12px; padding:5px 7px; border:1px solid var(--line); border-radius:6px; }
+  .fld.chk { flex-direction:row; align-items:center; justify-content:space-between; }
+  .fld.chk span { font-size:12px; color:var(--ink); }
+  .addring { width:100%; padding:9px; border:1px dashed #c3bba2; background:#faf8f0; border-radius:9px; cursor:pointer; font:inherit; font-size:13px; }
+  #stagewrap { overflow:auto; display:flex; align-items:flex-start; justify-content:center; padding:24px; }
+  #stage { background:#fff; box-shadow:0 1px 8px rgba(0,0,0,.10); }
+  #stage svg { display:block; max-width:100%; height:auto; }
+  details.json { grid-column:1 / -1; border-top:1px solid var(--line); background:var(--panel); padding:10px 16px; }
+  details.json summary { cursor:pointer; font-size:12.5px; color:#555; }
+  details.json textarea { width:100%; height:220px; margin-top:8px; font-family:ui-monospace,Menlo,monospace; font-size:12px; border:1px solid var(--line); border-radius:8px; padding:10px; }
+  details.json .row { display:flex; gap:8px; margin-top:8px; }
+  details.json button { font:inherit; font-size:13px; padding:6px 12px; border:1px solid var(--line); background:#fbf9f2; border-radius:7px; cursor:pointer; }
+</style>
+</head>
+<body>
+<header>
+  <h1>SPOK OS · DIAGRAM EDITOR</h1>
+  <span id="flash"></span>
+  <span class="spacer"></span>
+  <label>PNG scale <input id="scale" type="number" min="1" max="6" step="1"></label>
+  <button id="exportSvg">Export SVG</button>
+  <button id="exportPng" class="primary">Export PNG</button>
+</header>
+<main>
+  <aside id="controls"></aside>
+  <section id="stagewrap"><div id="stage"></div></section>
+  <details class="json">
+    <summary>JSON model — the shared source (SPOK edits <code>editor.js</code>; paste here to apply by hand)</summary>
+    <textarea id="json" spellcheck="false"></textarea>
+    <div class="row">
+      <button id="applyJson">Apply JSON</button>
+      <button id="copyJson">Copy</button>
+    </div>
+  </details>
+</main>
+<script src="editor.js"></script>
+</body>
+</html>
