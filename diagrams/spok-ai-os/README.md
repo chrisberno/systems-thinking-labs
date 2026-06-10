@@ -55,6 +55,10 @@ re-run, commit the **data**. Diffs are readable JSON, not SVG noise.
 | `spok-ai-os-v1.svg` | Current render (grounded to real SPOK systems) |
 | `spok-ai-os-v0.svg` | First pass (generic Ben-style labels) |
 | `notes.md` | **Ring → folder mapping** — how each ring lines up with the real filesystem |
+| `MODEL-KIT.md` | **Reference + teaching hub** — how to use the model, onboard agents, keep data/doctrine in sync |
+| `architecture-brief-v2.md` | **Canonical synthesis** — the whole model in one read (Gemini v2 spec) |
+| `soul-notes.md` · `brain-notes.md` · `capabilities-notes.md` · `connectors-notes.md` | **Per-ring depth** — reasoning, forge moves, real-vs-aspirational status |
+| `COMPLETION-CHECKLIST.md` | **Focus map** — done vs. pending per ring; the build order |
 
 ## Roadmap
 
