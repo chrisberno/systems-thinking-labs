@@ -76,6 +76,13 @@ QA gate** — it ships only what it can stand behind.
 name greeting, a ✅ / ❌ status grid — as long as **every check is real** (see
 `playgrounds/spok-os-playground-test-v1/CLAUDE.md`).
 
+> **Cross-tool, proven 2026-06-11.** Gemini CLI ran this same brief (via a symlinked `GEMINI.md`)
+> and the grid **degraded gracefully** — honest **❌** for the `deepspok` / COP infra it lacks, **✅**
+> for the filesystem it could reach. The trust-but-verify grid is **self-honest across
+> environments:** a tool without the infra *reports reduced capability instead of faking it.* That's
+> the activation layer's portability AND its integrity, in one screenshot. **Next: expand to more
+> tools/providers** (Cursor, Codex, …) and verify the same graceful degradation.
+
 ## 5. What this changes about the onion
 
 - **No new ring; no relabel.** The four-ring anatomy stands.
