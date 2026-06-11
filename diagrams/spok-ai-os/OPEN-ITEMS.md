@@ -14,11 +14,18 @@
 - [ ] **Re-sort rescued traits** — `feedback_ssh_key_sharing` + `feedback_creds_propagate_tailscale` are **ops, not soul** → move to the Capabilities/ops layer when `soul.md` lands.
 - [ ] **Canonical↔projection sync** — `~/SPOK/soul/` is canonical; `~/.claude` memory is the live harness copy. Wire sync/symlink (or fold into `soul.md`) to kill the **drift risk**. *(Until then: edit canonical, mirror by hand.)*
 
-## 🎨 Open — diagram naming pass (inside-out; Rings 1–2 done)
+## 🎨 Open — diagram naming pass (inside-out; Rings 1–3 done)
 - [x] **Ring 1: AI AGENT → AGENT** — defined (`core-agent-definition.md`).
 - [x] **Ring 2: CONTEXT → BRAIN** — labeled (hippocampus + cortex / INJECTS RECALL & CONTEXT) + defined (`brain-definition.md`).
-- [ ] **Ring 3: CAPABILITIES** — revisit name + tab.
+- [x] **Ring 3: CAPABILITIES** — kept name; tag → CAPABILITIES; outcome **GETS THE JOB DONE**; defined (`capabilities-definition.md`).
 - [ ] **Ring 4: CONNECTORS** — revisit name + tab.
+
+## 🧭 Open — Activation & Goal layer (design captured 2026-06-11; build after Ring 4)
+> Not a 5th ring — a layer on top of the anatomy. Source: `activation-and-goal.md`.
+- [ ] **Global↔project gradient** annotation on the diagram (inner = global/harness-set; outer = project/spawn-set).
+- [ ] **GOAL** dimension as a project-injected aim — *Project Goal* (persistent, in the folder) vs *Session Task* (ephemeral).
+- [ ] **Self-identification boot** strip (the convergence artifact) as the activation companion to the static anatomy.
+- [ ] Extend **per-ring source tags** to name each ring's global/project split.
 
 ## 🧹 Open — artifacts / cleanup
 - [ ] Strip the dropped *"own the soul, rent the body"* + *"body"* language from the Desktop explainer doc + old infographic prompt.
