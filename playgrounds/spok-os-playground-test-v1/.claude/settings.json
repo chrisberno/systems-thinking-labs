@@ -1,0 +1,17 @@
+{
+  "$comment": "Project-scoped permissions (the Connectors-ring PAC / project face). Illustrative starter — tighten per task.",
+  "permissions": {
+    "allow": [
+      "Read",
+      "Edit",
+      "Write",
+      "Bash(npm install)",
+      "Bash(npm run dev)",
+      "Bash(npm run build)",
+      "Bash(npm run lint)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ],
+    "deny": []
+  }
+}
