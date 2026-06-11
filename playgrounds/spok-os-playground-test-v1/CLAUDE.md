@@ -12,9 +12,10 @@ When you spawn here you inherit the **global** SPOK OS (Soul + Brain, from `~/SP
 
 1. **Who / where / why** — "I'm \<role\> on \<engine\>, in spok-os-playground-test-v1; goal:
    \<one line from GOAL.md\>."
-2. **One proof of grounding** — a single *live* fact you had to actually fetch this moment (e.g.
-   **the latest COP issue**, or the newest deepspok thought). Proof you truly reached the brain;
-   the CEO verifies it in seconds.
+2. **One proof of grounding** — a single *live* fact you fetched this moment, as a **pointer, not
+   a report:** just the handle in one short clause (e.g. *"latest COP issue: ONR-142"* or *"newest
+   brain thought: the 6/10 scaling note"*) — **do not summarize its contents.** Proof you reached
+   the brain; the CEO verifies it in seconds.
 3. **Honest gap — one line, only if real** — e.g. "note: `~/SPOK/skills/` not present yet."
 
 Then: *"Task, or shall I propose one?"*

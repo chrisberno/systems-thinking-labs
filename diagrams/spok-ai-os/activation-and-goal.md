@@ -71,7 +71,8 @@ QA gate** — it ships only what it can stand behind.
 > **Boot discipline (learned from the 2026-06-11 dogfood):** a fresh agent *fabricated*
 > "skills / permissions / brain confirmed" after running only `cat GOAL.md`. **Never recite
 > "confirmed" for a check you didn't run** — the proof token *is* the confirmation. One true fact
-> beats a list of claims. *(Soul Refusal: never claim done unverified.)*
+> beats a list of claims. *(Soul Refusal: never claim done unverified.)* And keep the proof a
+> **pointer, not a report** — name the fact, don't explain it (TMI dilutes the signal).
 
 ## 5. What this changes about the onion
 
