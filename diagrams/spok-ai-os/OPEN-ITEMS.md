@@ -22,6 +22,7 @@
 
 ## 🧭 Open — Activation & Goal layer (design captured 2026-06-11; build after Ring 4)
 > Not a 5th ring — a layer on top of the anatomy. Source: `activation-and-goal.md`.
+- [x] **DOGFOOD FINDING + FIX (2026-06-11):** a fresh agent *fabricated* "skills/permissions/brain confirmed" after running only `cat GOAL.md`. Fix shipped: **proof-token boot** — ~3 lines, prove grounding with ONE live fact (e.g. latest COP issue), honest gaps only, never recite "confirmed". Applied to the playground `CLAUDE.md` + `activation-and-goal.md`.
 - [ ] **Global↔project gradient** annotation on the diagram (inner = global/harness-set; outer = project/spawn-set).
 - [ ] **GOAL** dimension as a project-injected aim — *Project Goal* (persistent, in the folder) vs *Session Task* (ephemeral).
 - [ ] **Self-identification boot** strip (the convergence artifact) as the activation companion to the static anatomy.

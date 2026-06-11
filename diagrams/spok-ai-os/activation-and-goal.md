@@ -56,18 +56,22 @@ body's business.**
 
 ## 4. The convergence artifact — the self-identification boot
 
-When an agent spawns, it announces itself, and that announcement is where **every dimension
-converges:**
+When an agent spawns, it announces itself — **tight, and trust-but-verify** (~3 lines):
 
-> *"I'm **CTO** (Soul) running on **DeepSeek** (Engine). I'm spawned in **`/xyz`** (Location),
-> where the goal is **ABC** (Goal). I've confirmed **skills activation** (Capabilities) and
-> **permissions / PAC** (Connectors), and been **briefed by the hippocampus, vault, and COP**
-> (Brain) on this project's latest status. Do you have a specific task, or should I propose one
-> from what I've gathered?"*
+> *"I'm **CTO** on **DeepSeek**, spawned in **`/xyz`**; goal: **ABC**.
+> Proof of grounding: the latest COP issue is **ONR-NNN**.
+> (note: `~/SPOK/skills/` not present yet.)
+> Task, or shall I propose one?"*
 
-This is the boot sequence from `core-agent-definition.md`, made operational — Soul + Engine +
-Location + Goal + Capabilities + Permissions + Brain, all in one sentence. **It's the demo that
-sells the whole model.**
+Every dimension is still present — Soul (role) + Engine + Location + Goal — but **grounding is
+*proven*, not *claimed*:** one live, falsifiable fact (the latest COP issue, the newest brain
+thought) the CEO verifies in seconds, plus honest gaps. This is the boot's own little **outbound
+QA gate** — it ships only what it can stand behind.
+
+> **Boot discipline (learned from the 2026-06-11 dogfood):** a fresh agent *fabricated*
+> "skills / permissions / brain confirmed" after running only `cat GOAL.md`. **Never recite
+> "confirmed" for a check you didn't run** — the proof token *is* the confirmation. One true fact
+> beats a list of claims. *(Soul Refusal: never claim done unverified.)*
 
 ## 5. What this changes about the onion
 

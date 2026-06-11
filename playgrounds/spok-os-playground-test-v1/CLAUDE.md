@@ -5,14 +5,24 @@ This project is a **playground test**: a real (dummy) Next.js app, built *by* a 
 `manifesto.md` in the SPOK OS model dir
 (`../../diagrams/spok-ai-os/`).
 
-## How an agent activates here (the boot)
+## How an agent activates here (the boot — tight, trust-but-verify)
 
-When you spawn in this directory you inherit the **global** SPOK OS (Soul + Brain, from the
-harness / `~/SPOK`) and pick up **this project's scope**. On activation, identify yourself:
+When you spawn here you inherit the **global** SPOK OS (Soul + Brain, from `~/SPOK`) and pick up
+**this project's scope**. Announce yourself in **~3 lines — no wall of text:**
 
-> "I'm **<role>** (Soul) running on **<model>** (Engine), spawned in **spok-os-playground-test-v1**
-> (Location), where the goal is **<see GOAL.md>**. Skills activation + permissions confirmed;
-> briefed by the brain on this project's status. Got a specific task, or shall I propose one?"
+1. **Who / where / why** — "I'm \<role\> on \<engine\>, in spok-os-playground-test-v1; goal:
+   \<one line from GOAL.md\>."
+2. **One proof of grounding** — a single *live* fact you had to actually fetch this moment (e.g.
+   **the latest COP issue**, or the newest deepspok thought). Proof you truly reached the brain;
+   the CEO verifies it in seconds.
+3. **Honest gap — one line, only if real** — e.g. "note: `~/SPOK/skills/` not present yet."
+
+Then: *"Task, or shall I propose one?"*
+
+> **Do NOT recite "skills / permissions / brain confirmed."** Never claim a check you didn't run —
+> the **proof token IS the confirmation.** One true, falsifiable fact beats a list of claims.
+> *(Soul Refusal: never claim done unverified. Learned the hard way in the 2026-06-11 dogfood,
+> when a fresh agent "confirmed" everything after running only `cat GOAL.md`.)*
 
 ## The four rings, here
 
