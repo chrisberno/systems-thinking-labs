@@ -34,7 +34,7 @@ disciplined membrane — and package it as a **template**:
 
 ## Eat our own dog food
 
-We prove it by **using it.** A real (dummy) **Next.js** project — `spok-os-dogfood` — built *by* a
+We prove it by **using it.** A real (dummy) **Next.js** project — `spok-os-playground-test-v1` — built *by* a
 SPOK OS agent, *from inside* the project directory, toward a clear goal. If SPOK OS makes us
 dramatically faster and better at shipping it, it's real. If it doesn't, we find out before anyone
 else does.

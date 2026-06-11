@@ -37,7 +37,7 @@
 
 ## 🚀 Open — SHIP SPOK OS (eat our own dog food)
 > Manifesto: `manifesto.md`. Direction set 2026-06-11.
-- [x] **`spok-os-dogfood` scaffold** — `~/projects/spok-os-dogfood/` (Next.js dummy + SPOK OS activation layer + clone/cd/activate README). *(landed this session.)*
+- [x] **`spok-os-playground-test-v1` scaffold** — `~/projects/spok-os-playground-test-v1/` (Next.js dummy + SPOK OS activation layer + clone/cd/activate README). *(landed this session.)*
 - [ ] Build out the dummy app **BY a SPOK OS agent, from inside the project, toward its GOAL** — the proof.
 - [ ] Package SPOK OS as a clone-and-go **template** (the "shippable template" rung of the ladder).
 
