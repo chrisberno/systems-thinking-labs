@@ -48,4 +48,4 @@
 - [ ] NotebookLM audio/PNG redo (parked — current drafts in `drafts/` on the MINI).
 
 ## 🚧 GATE
-The onion is **NOT locked** — we're mid naming pass (Ring 1 only). **No graduation** to `~/SPOK/os` or deepspok capture until the CEO is stoked. *(The soul-traits rescue is a deliberate, CEO-authorized exception.)*
+The onion is **NOT locked yet.** The four-ring **anatomy is defined** (Rings 1–4) — but still open before lock: the **Activation & Goal layer** (not yet drawn), the **`config.json` back-port + README prose refresh**, and the **CEO's stoke**. **No graduation** to `~/SPOK/os` and **no deepspok synthesis-capture / vault-save** until then. *(The soul-traits rescue was a deliberate, CEO-authorized exception.)*
