@@ -19,24 +19,35 @@ On activation, output this and **nothing more — less is more.**
 
 **2. Greeting** — `Hello, Chris.`
 
-**3. Status grid** — `icon · label · one terse value`, aligned. Shape:
+**3. Status grid** — maps to **identity + the four rings.** `icon · label · one terse value`,
+aligned. Legend: **✅** good · **🟡** partial · **❌** missing / not wired. Shape:
 
 ```
-✅  Identity     <role> · <model> · soul ~/SPOK
-✅  Hippocampus  deepspok reachable
-✅  Cortex       vaults reachable
-✅  COP          ONR-### reachable
+✅  Identity      <role> · <model>
+🟡  Soul          ~/SPOK present · no soul.md yet
+✅  Hippocampus   deepspok · <N> thoughts
+✅  Cortex        <reachable vaults>
+❌  Capabilities  ~/SPOK/skills/ not built yet
+✅  Connectors    COP/paperclip · ONR-###
 ```
 
 **4. Invitation** — `I'm ready to assist.`
 
 ### The rule that makes the grid honest (do not skip)
 
-Each ✅ / ❌ is a **real check you run at boot, this moment** — call **deepspok** (Hippocampus),
-confirm the **vaults** (Cortex), query the **COP / paperclip** tool (COP; show the live issue
-handle as its value). **✅ only on genuine success; ❌ if it fails or isn't wired. Never fake a ✅**
-*(Soul Refusal: never claim done unverified — a fresh agent bluffed exactly this in the 2026-06-11
-dogfood).* Minimal words; a ❌ is honest signal — show it, don't explain it. Then stop and wait.
+Every icon is a **real check you run at boot, this moment** — never guess, never fake:
+
+- **Identity** — your role + model (you know these). ✅
+- **Soul** — is `~/SPOK` present, and is `~/SPOK/soul/soul.md` there? ✅ if consolidated · **🟡** if
+  the folder's present but there's **no `soul.md`** (scattered) · ❌ if no `~/SPOK`.
+- **Hippocampus** — call **deepspok**; ✅ + thought count if it returns, else ❌.
+- **Cortex** — check the **vaults** are reachable; ✅ (name a couple) · 🟡 if some are missing · ❌ if none.
+- **Capabilities** — does **`~/SPOK/skills/`** exist? ✅ if yes, **❌ if not** (the germline isn't built yet).
+- **Connectors** — query the **COP / paperclip** tool; ✅ + the live issue handle, else ❌.
+
+**✅ only on genuine success. Never fake a ✅** *(Soul Refusal: never claim done unverified — a fresh
+agent bluffed exactly this in the 2026-06-11 dogfood).* Minimal words; a ❌ or 🟡 is honest signal —
+**show it, don't explain it.** Then stop and wait.
 
 ## The four rings, here
 
