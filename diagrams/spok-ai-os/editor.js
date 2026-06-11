@@ -28,9 +28,9 @@ const MODEL = {
     { id: "context", label: "CONTEXT", sublabel: "deepspok + vaults", radius: 188, fill: "#4ABEE5",
       outcomeLabel: "THE BRAIN", outcome: "UNDERSTANDS YOUR BUSINESS", outcomeFill: "#4ABEE5",
       source: "deepspok (hippocampus) + vaults (cortex)", accent: false },
-    { id: "core", label: "AI AGENT", sublabel: "body + soul", radius: 100, fill: "#7FDCFF",
-      outcomeLabel: "SOUL · JUDGMENT", outcome: "CARRIES YOUR JUDGMENT  ★", outcomeFill: "#7FDCFF",
-      source: "body = rented · soul = CLAUDE.md + agents/", accent: true },
+    { id: "core", label: "AGENT", sublabel: "LLM + Soul", radius: 100, fill: "#7FDCFF",
+      outcomeLabel: "THE AGENT", outcome: "CARRIES YOUR JUDGMENT  ★", outcomeFill: "#7FDCFF",
+      source: "LLM = rented (the model) · Soul = CLAUDE.md + agents/", accent: true },
   ],
 };
 
