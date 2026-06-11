@@ -11,6 +11,24 @@
 
 ---
 
+## ▶ START HERE — read order for a future agent (added 2026-06-11)
+
+The onion's **four rings are now individually defined** (the naming pass is complete). To come up
+to speed fast, read in this order:
+
+1. `manifesto.md` — *why* this exists, plain terms (the ship-SPOK-OS vision).
+2. `README.md` — the picture + how to regenerate it.
+3. The four **ring definitions** (the locked anatomy):
+   `core-agent-definition.md` → `brain-definition.md` → `capabilities-definition.md` → `connectors-definition.md`.
+4. `activation-and-goal.md` — the **activation layer** (global↔project scope + the Goal dimension + the self-identification boot). *Not a ring — a layer on top of the anatomy.*
+5. `OPEN-ITEMS.md` — **the front-and-center tracker.** Done / open / the GATE. Glance here first, every session.
+6. `editor.html` — the live, data-driven diagram editor (`python3 -m http.server` in this dir, then open it). `snapshot.js` banks checkpoints to `~/Desktop/spok-os-diagram/`.
+
+> The original `*-notes.md` files are the earlier per-ring reasoning; the `*-definition.md` files
+> **supersede** them as the locked definitions.
+
+---
+
 ## The artifact map — what each file is for
 
 | Artifact | Role | Use it when… |

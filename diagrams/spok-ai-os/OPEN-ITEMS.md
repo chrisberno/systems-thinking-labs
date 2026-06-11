@@ -14,11 +14,11 @@
 - [ ] **Re-sort rescued traits** — `feedback_ssh_key_sharing` + `feedback_creds_propagate_tailscale` are **ops, not soul** → move to the Capabilities/ops layer when `soul.md` lands.
 - [ ] **Canonical↔projection sync** — `~/SPOK/soul/` is canonical; `~/.claude` memory is the live harness copy. Wire sync/symlink (or fold into `soul.md`) to kill the **drift risk**. *(Until then: edit canonical, mirror by hand.)*
 
-## 🎨 Open — diagram naming pass (inside-out; Rings 1–3 done)
-- [x] **Ring 1: AI AGENT → AGENT** — defined (`core-agent-definition.md`).
-- [x] **Ring 2: CONTEXT → BRAIN** — labeled (hippocampus + cortex / INJECTS RECALL & CONTEXT) + defined (`brain-definition.md`).
-- [x] **Ring 3: CAPABILITIES** — kept name; tag → CAPABILITIES; outcome **GETS THE JOB DONE**; defined (`capabilities-definition.md`).
-- [ ] **Ring 4: CONNECTORS** — revisit name + tab.
+## 🎨 Diagram naming pass — ✅ ANATOMY COMPLETE (Rings 1–4 defined)
+- [x] **Ring 1: AGENT** — DETERMINES YOUR OUTCOMES — `core-agent-definition.md`.
+- [x] **Ring 2: BRAIN** — INJECTS RECALL & CONTEXT — `brain-definition.md`.
+- [x] **Ring 3: CAPABILITIES** — GETS THE JOB DONE — `capabilities-definition.md`.
+- [x] **Ring 4: CONNECTORS** — CONNECTS YOU TO THE WORLD — `connectors-definition.md`. *(outcome wording = SPOK god-mode call; easy to change.)*
 
 ## 🧭 Open — Activation & Goal layer (design captured 2026-06-11; build after Ring 4)
 > Not a 5th ring — a layer on top of the anatomy. Source: `activation-and-goal.md`.
@@ -26,6 +26,20 @@
 - [ ] **GOAL** dimension as a project-injected aim — *Project Goal* (persistent, in the folder) vs *Session Task* (ephemeral).
 - [ ] **Self-identification boot** strip (the convergence artifact) as the activation companion to the static anatomy.
 - [ ] Extend **per-ring source tags** to name each ring's global/project split.
+
+## 🌀 Open — Connectors membrane gaps (Ring 4 build / bilayer)
+- [ ] **Provenance stamp** at ingestion — source/citation captured at the moment of crossing.
+- [ ] **Outbound QA / definition-of-done gate** — meets-the-goal? destination? meta/tags? — *judgment inward*, enforced at the membrane.
+- [ ] **Handoff packaging** — what's left + context, so the next human/agent boots into continuity (outbound analog of "cite your sources").
+- [ ] **Flag for Phase-0/bilayer:** the outbound QA + handoff gate has **no home in the bilayer spec** (ingestion-only) — a gap in the bilayer *design itself*.
+- [ ] Adopt **REM / dream** naming for the purge (better than Phase-0's "3 AM deep-sleep, rename TBD").
+- *Bilayer = stepping-stone; **snag only what works**; may never ship.*
+
+## 🚀 Open — SHIP SPOK OS (eat our own dog food)
+> Manifesto: `manifesto.md`. Direction set 2026-06-11.
+- [x] **`spok-os-dogfood` scaffold** — `~/projects/spok-os-dogfood/` (Next.js dummy + SPOK OS activation layer + clone/cd/activate README). *(landed this session.)*
+- [ ] Build out the dummy app **BY a SPOK OS agent, from inside the project, toward its GOAL** — the proof.
+- [ ] Package SPOK OS as a clone-and-go **template** (the "shippable template" rung of the ladder).
 
 ## 🧹 Open — artifacts / cleanup
 - [ ] Strip the dropped *"own the soul, rent the body"* + *"body"* language from the Desktop explainer doc + old infographic prompt.

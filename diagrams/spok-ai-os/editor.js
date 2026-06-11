@@ -20,7 +20,7 @@ const MODEL = {
   // rings: OUTER -> INNER (this array order = drawing order AND outcome-box order)
   rings: [
     { id: "connectors", label: "CONNECTORS", sublabel: "MCP — the I/O membrane", radius: 350, fill: "#296A7F",
-      outcomeLabel: "CONNECTORS · MCP", outcome: "ACCESSES YOUR TOOLS", outcomeFill: "#296A7F",
+      outcomeLabel: "CONNECTORS", outcome: "CONNECTS YOU TO THE WORLD", outcomeFill: "#296A7F",
       source: "~/SPOK/mcp/ + registered MCPs", accent: false },
     { id: "capabilities", label: "CAPABILITIES", sublabel: "skills · routines · loops", radius: 268, fill: "#3E9EBF",
       outcomeLabel: "CAPABILITIES", outcome: "GETS THE JOB DONE", outcomeFill: "#3E9EBF",
