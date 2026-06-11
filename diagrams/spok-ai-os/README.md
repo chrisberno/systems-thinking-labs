@@ -4,7 +4,9 @@
 
 ![The SPOK OS](spok-ai-os-v2.svg)
 
-> _Current working render (**v2**), from the interactive editor (`editor.html`). Rings 1–2 — **Agent** and **Brain** — reworked: dark-teal theme, Connectors-outermost order, new outcomes. Naming pass for Rings 3–4 is in progress; the canonical `config.json` back-port is pending (see `OPEN-ITEMS.md`). The older `spok-ai-os-v1.svg` is kept for history._
+> _Current working render (**v2**), from the interactive editor (`editor.html`). All four rings — **Agent · Brain · Capabilities · Connectors** — reworked: dark-teal theme, Connectors-outermost order, new outcomes. The canonical `config.json` back-port + README prose refresh are pending (see `OPEN-ITEMS.md`). The older `spok-ai-os-v1.svg` is kept for history._
+
+> **📋 Project ticket:** **`ONR-111`** in the COP — *SPOK OS project setup · bilayer reconciliation · cruft cleanup · demo plan* (links `ONR-107` paradigm + `ONR-108` diagram). Live tracker: `OPEN-ITEMS.md`.
 
 ## Overview
 
