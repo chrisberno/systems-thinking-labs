@@ -1,7 +1,7 @@
 # SPOK OS — Core Ring Definition: THE AGENT
 
 > The center ring, locked 2026-06-11. The AGENT is the acting entity. It is composed of
-> **two elements**, and the entire design depends on keeping them separate — **one rented,
+> **two elements**, and the entire design depends on keeping them separate — **one metered,
 > one owned.** Supersedes the earlier "AI Agent / body + soul" framing ("body" was dropped:
 > in biology the body includes the brain and nerves, which are their own outer rings, so it
 > double-claimed territory).
@@ -11,7 +11,7 @@
 ## AGENT = the LLM it's *wired to* + the Soul it's *provided*
 
 The verbs carry the lesson:
-- **wired to** the LLM → a temporary, pluggable connection (rented).
+- **wired to** the LLM → a temporary, pluggable connection (metered).
 - **provided** the Soul → given once and kept (owned).
 
 The identity of the agent lives in the **Soul**. The LLM is only the engine it happens to be
@@ -23,7 +23,8 @@ running on today. **Swap the LLM, the agent stays itself.**
 
 - **What it is:** the raw reasoning model doing the thinking in the moment — horsepower,
   fluency, speed.
-- **Source:** *rented / external.* Whatever model the harness is wired to at runtime —
+- **Source:** *metered / external — token-based and variable (you pay per token of use), never
+  a flat lease.* Whatever model the harness is wired to at runtime —
   **Claude Opus 4.8 via Claude Code today**; GPT, or a local model, elsewhere (Goose, Sprok).
 - **Form of the source:** **not a repo file.** It is a runtime wire to a vendor's model,
   provisioned by the harness/body — not authored by us.
@@ -49,17 +50,19 @@ running on today. **Swap the LLM, the agent stays itself.**
 
 | | THE LLM | THE SOUL |
 |---|---|---|
-| Relationship | **wired to** (rented) | **provided** (owned) |
+| Relationship | **wired to** (metered) | **provided** (owned) |
 | Source | a runtime wire to a vendor's model | files we author |
 | Where it lives | the harness (Claude Code / Goose / Sprok) | `~/SPOK/` germline (→ `soul.md`) |
 | On a swap | replaced | unchanged |
 | Is it the identity? | no — just today's engine | **yes — this is who the agent is** |
 
-**One line:** the AGENT is a *rented engine running an owned set of values* — and only the
+**One line:** the AGENT is a *metered engine running an owned set of values* — and only the
 values are "you."
 
 ## Diagram encoding (current)
 
 - Ring headliner: **AGENT** · sublabel: **LLM + Soul**
-- Source tag (right): `LLM = rented (the model) · Soul = CLAUDE.md + agents/`
-- Outcome: **CARRIES YOUR JUDGMENT ★** (the differentiator — the soul supplies the judgment).
+- Source tag (right): `LLM = token-metered model · Soul = CLAUDE.md + agents/`
+- Outcome: **DETERMINES YOUR OUTCOMES ★** — the result is a product of the two halves:
+  the **LLM** it's wired to × the **Soul** it's provided. (Supersedes "carries your judgment":
+  judgment is one feature; the agent shapes the *whole* outcome, and only these two inputs do.)

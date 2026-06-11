@@ -29,8 +29,8 @@ const MODEL = {
       outcomeLabel: "THE BRAIN", outcome: "UNDERSTANDS YOUR BUSINESS", outcomeFill: "#4ABEE5",
       source: "deepspok (hippocampus) + vaults (cortex)", accent: false },
     { id: "core", label: "AGENT", sublabel: "LLM + Soul", radius: 100, fill: "#7FDCFF",
-      outcomeLabel: "THE AGENT", outcome: "CARRIES YOUR JUDGMENT  ★", outcomeFill: "#7FDCFF",
-      source: "LLM = rented (the model) · Soul = CLAUDE.md + agents/", accent: true },
+      outcomeLabel: "THE AGENT", outcome: "DETERMINES YOUR OUTCOMES  ★", outcomeFill: "#7FDCFF",
+      source: "LLM = token-metered model · Soul = CLAUDE.md + agents/", accent: true },
   ],
 };
 
