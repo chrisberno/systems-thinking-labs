@@ -44,7 +44,9 @@ model's weights.** That single fact is the foundation of the whole design:
   Edit `CLAUDE.md`, and every future boot — on any engine — inherits it instantly.
 - **Boot is re-instantiation, not memory.** Each session the engine starts blank and is
   *re-made* into the agent by re-pouring the blueprint. The files are the continuity; the
-  running process is disposable.
+  running process is disposable. *(Not amnesia: the **Soul** re-loads identical every boot;
+  cross-session **memory** — what the agent knows and has learned — is the **Brain**'s job
+  (Ring 2), not the core's.)*
 
 > So "select your model, then it gets its soul from CLAUDE.md/agents" is exactly right — and
 > the reason it matters is that the soul lives in *loadable files*, not in the rented engine.
@@ -60,6 +62,10 @@ model's weights.** That single fact is the foundation of the whole design:
   **Claude Opus 4.8 via Claude Code today**; GPT, or a local model, elsewhere (Goose, Sprok).
 - **Form of the source:** **not a repo file.** It is a runtime wire to a vendor's model,
   provisioned by the harness/body — not authored by us.
+- **Two parts, both rented:** the **harness** (Claude Code / Goose / Sprok) is the *loader /
+  runtime* that boots and wires everything up; the **model** is the *metered reasoning engine*
+  it wires to — the program vs. the brain it runs. We label this whole half "LLM" for
+  simplicity, but harness and model are both swappable.
 - **Property:** **FUNGIBLE.** Swap it freely; the agent's identity must not move.
 
 ## Element 2 — THE SOUL (the values it's provided)
@@ -74,6 +80,9 @@ model's weights.** That single fact is the foundation of the whole design:
     local to one harness, not in git). Now canonical + git-synced; the `~/.claude` copies remain
     as the live harness projection until sync is wired. Full fold into a single `soul.md`
     (the 5 invariants) is pending the Values forge — tracked in `OPEN-ITEMS.md`.
+- **Layered, not monolithic:** the soul is a shared **base** (`~/SPOK/CLAUDE.md` doctrine,
+  inherited by every agent) plus per-role **overlays** (`agents/spok-executive.md`, `cto-…`,
+  `cfo-…`). There isn't *one* soul — there's a **family of personas on one shared spine.**
 - **Property:** **PERMANENT.** Provided once, inherited by every future agent, survives an
   LLM swap.
 
