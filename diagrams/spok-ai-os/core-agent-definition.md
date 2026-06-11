@@ -19,6 +19,38 @@ running on today. **Swap the LLM, the agent stays itself.**
 
 ---
 
+## How it boots — how an agent actually comes alive
+
+The two elements assemble in a strict order, every session. The order *is* the architecture:
+
+1. **The harness boots** — Claude Code (or Goose, or Sprok). The body/runtime: an empty shell.
+   No intelligence, no identity yet.
+2. **A model is selected → the engine is wired in.** Now there's raw reasoning power — a
+   *blank genius*: fully capable, but anonymous. It could be anyone's agent; it is no one's yet.
+3. **The soul blueprint loads into context.** The first thing the agent does is read its soul
+   from files: `~/SPOK/CLAUDE.md` (auto-loaded at boot, always), then the role persona
+   `agents/spok-executive.md` (on activation — "SPOK please"), plus the memory traits. The
+   generic engine becomes **this** agent. Identity installed.
+4. **The agent is live** — a metered engine now carrying an owned soul, ready to act.
+
+### The load-bearing truth (why any of this works)
+
+**The soul is installed by being *read into the context window* at boot — NOT trained into the
+model's weights.** That single fact is the foundation of the whole design:
+
+- **Swap the engine, keep the soul.** The same files pour into any model (Claude, GPT, local).
+  Identity survives a swap because it was never *inside* the model to begin with.
+- **The soul is git, not fine-tuning.** You version-control a blueprint; you don't retrain.
+  Edit `CLAUDE.md`, and every future boot — on any engine — inherits it instantly.
+- **Boot is re-instantiation, not memory.** Each session the engine starts blank and is
+  *re-made* into the agent by re-pouring the blueprint. The files are the continuity; the
+  running process is disposable.
+
+> So "select your model, then it gets its soul from CLAUDE.md/agents" is exactly right — and
+> the reason it matters is that the soul lives in *loadable files*, not in the rented engine.
+
+---
+
 ## Element 1 — THE LLM (the engine it's wired to)
 
 - **What it is:** the raw reasoning model doing the thinking in the moment — horsepower,
@@ -37,10 +69,11 @@ running on today. **Swap the LLM, the agent stays itself.**
 - **Source:** *authored / owned* — the SPOK germline (version-controlled, inheritable):
   - `~/SPOK/CLAUDE.md` — the doctrine / value slice
   - `~/SPOK/agents/*.md` — the personas (spok-executive + the C-suite)
-  - **Footnote (today's reality):** a third store exists outside the germline —
-    `~/.claude/…/memory/feedback_*.md` (the trait files: Forge gene, candor, one-thread, etc.).
-    It is the purest behavioral soul today but is **body-coupled** (local to one harness,
-    doesn't sync via git). Consolidation target: fold all of it into a single `soul.md`.
+  - `~/SPOK/soul/traits/*.md` — behavioral traits (Forge gene, candor, one-thread, etc.),
+    **rescued 2026-06-11** from `~/.claude/…/memory/feedback_*.md` (which was body-coupled —
+    local to one harness, not in git). Now canonical + git-synced; the `~/.claude` copies remain
+    as the live harness projection until sync is wired. Full fold into a single `soul.md`
+    (the 5 invariants) is pending the Values forge — tracked in `OPEN-ITEMS.md`.
 - **Property:** **PERMANENT.** Provided once, inherited by every future agent, survives an
   LLM swap.
 
