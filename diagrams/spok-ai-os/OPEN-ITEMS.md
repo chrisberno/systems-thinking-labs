@@ -14,8 +14,9 @@
 - [ ] **Re-sort rescued traits** — `feedback_ssh_key_sharing` + `feedback_creds_propagate_tailscale` are **ops, not soul** → move to the Capabilities/ops layer when `soul.md` lands.
 - [ ] **Canonical↔projection sync** — `~/SPOK/soul/` is canonical; `~/.claude` memory is the live harness copy. Wire sync/symlink (or fold into `soul.md`) to kill the **drift risk**. *(Until then: edit canonical, mirror by hand.)*
 
-## 🎨 Open — diagram naming pass (inside-out; only Ring 1 done)
-- [ ] **Ring 2: CONTEXT → BRAIN** (deepspok hippocampus + vaults cortex) + tab rework.
+## 🎨 Open — diagram naming pass (inside-out; Rings 1–2 done)
+- [x] **Ring 1: AI AGENT → AGENT** — defined (`core-agent-definition.md`).
+- [x] **Ring 2: CONTEXT → BRAIN** — labeled (hippocampus + cortex / INJECTS RECALL & CONTEXT) + defined (`brain-definition.md`).
 - [ ] **Ring 3: CAPABILITIES** — revisit name + tab.
 - [ ] **Ring 4: CONNECTORS** — revisit name + tab.
 
