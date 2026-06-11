@@ -1,16 +1,20 @@
 {
-  "$comment": "Project-scoped permissions (the Connectors-ring PAC / project face). Illustrative starter — tighten per task.",
+  "$comment": "Project-scoped permissions (the Connectors-ring PAC). READ-ONLY boot work is pre-authorized so activation runs prompt-free; anything that writes still prompts.",
   "permissions": {
     "allow": [
       "Read",
       "Edit",
       "Write",
+      "Bash(bash scripts/boot-check.sh)",
       "Bash(npm install)",
       "Bash(npm run dev)",
       "Bash(npm run build)",
       "Bash(npm run lint)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "mcp__deepspok__list_thoughts",
+      "mcp__deepspok__thought_stats",
+      "mcp__paperclip__list_issues"
     ],
     "deny": []
   }

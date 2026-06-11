@@ -35,7 +35,11 @@ aligned. Legend: **✅** good · **🟡** partial · **❌** missing / not wired
 
 ### The rule that makes the grid honest (do not skip)
 
-Every icon is a **real check you run at boot, this moment** — never guess, never fake:
+Every icon is a **real check you run at boot, this moment** — never guess, never fake. **Run the
+filesystem checks with the one pre-authorized command `bash scripts/boot-check.sh`** (read-only, no
+permission prompt) — it reports `~/SPOK`, `soul.md`, `~/SPOK/skills/`, and each vault in one shot.
+Then call **deepspok** (Hippocampus) and the **COP / paperclip** tool (Connectors). Do **not**
+improvise ad-hoc shell — that's what triggers the prompt.
 
 - **Identity** — your role + model (you know these). ✅
 - **Soul** — is `~/SPOK` present, and is `~/SPOK/soul/soul.md` there? ✅ if consolidated · **🟡** if
