@@ -108,6 +108,25 @@ library.
 - So the **READ path (injection) is real today**; the **WRITE path (automated consolidation) is
   largely manual / aspirational.** Tracked in `OPEN-ITEMS.md` under the broader build.
 
+## References — the deeper memory docs (vault.onreb.ai)
+
+This ring note is the *summary*. The canonical, comprehensive write-ups live in the onreb-vault:
+
+- **Memory Architecture — Hippocampus & Cortex** — the canonical spec: the two systems, the
+  strategic / IP / SPOKaaS angle, and the full memory-consolidation lifecycle.
+  → <https://vault.onreb.ai/executive/memory-architecture-hippocampus>
+  *(source: `onreb-vault/executive/memory-architecture-hippocampus.md`)*
+- **Memory in LLM-Based Multi-Agent Systems — Survey** — research grounding: memory types across
+  agent frameworks (2024–2026).
+  → <https://vault.onreb.ai/spok/documentary/research/11-multi-agent-memory-survey>
+- **Cognitive Workspace: Active Memory for LLMs** — research on *active* memory management
+  (Baddeley's working-memory model); underpins the "injection, not a passive store" claim.
+  → <https://vault.onreb.ai/spok/documentary/research/10-cognitive-workspace>
+
+**Related (the intake that feeds the Hippocampus):** the HeadVroom **Phase-0 sensory/ingestion
+spec** — `headvroom-bilayer-mock/PHASE-0-REQUIREMENTS.md` (on the MINI). That's Ring 4
+(Connectors) territory — the receptors + Digital Thalamus that capture *into* this ring.
+
 ## Diagram encoding (current)
 
 - Ring headliner: **BRAIN** · sublabel: **hippocampus + cortex**
