@@ -2,7 +2,9 @@
 
 **An AI Operating System — soul made explicit, germline-sourced.**
 
-![The SPOK OS](spok-ai-os-v1.svg)
+![The SPOK OS](spok-ai-os-v2.svg)
+
+> _Current working render (**v2**), from the interactive editor (`editor.html`). Rings 1–2 — **Agent** and **Brain** — reworked: dark-teal theme, Connectors-outermost order, new outcomes. Naming pass for Rings 3–4 is in progress; the canonical `config.json` back-port is pending (see `OPEN-ITEMS.md`). The older `spok-ai-os-v1.svg` is kept for history._
 
 ## Overview
 
