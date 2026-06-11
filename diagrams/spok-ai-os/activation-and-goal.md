@@ -72,7 +72,9 @@ QA gate** — it ships only what it can stand behind.
 > "skills / permissions / brain confirmed" after running only `cat GOAL.md`. **Never recite
 > "confirmed" for a check you didn't run** — the proof token *is* the confirmation. One true fact
 > beats a list of claims. *(Soul Refusal: never claim done unverified.)* And keep the proof a
-> **pointer, not a report** — name the fact, don't explain it (TMI dilutes the signal).
+> **pointer, not a report** — name the fact, don't explain it (TMI dilutes the signal). A project may *dress the boot up* — logo,
+name greeting, a ✅ / ❌ status grid — as long as **every check is real** (see
+`playgrounds/spok-os-playground-test-v1/CLAUDE.md`).
 
 ## 5. What this changes about the onion
 

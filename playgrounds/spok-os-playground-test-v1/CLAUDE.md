@@ -5,25 +5,38 @@ This project is a **playground test**: a real (dummy) Next.js app, built *by* a 
 `manifesto.md` in the SPOK OS model dir
 (`../../diagrams/spok-ai-os/`).
 
-## How an agent activates here (the boot — tight, trust-but-verify)
+## How an agent activates here (the boot — branded, trust-but-verify)
 
-When you spawn here you inherit the **global** SPOK OS (Soul + Brain, from `~/SPOK`) and pick up
-**this project's scope**. Announce yourself in **~3 lines — no wall of text:**
+On activation, output this and **nothing more — less is more.**
 
-1. **Who / where / why** — "I'm \<role\> on \<engine\>, in spok-os-playground-test-v1; goal:
-   \<one line from GOAL.md\>."
-2. **One proof of grounding** — a single *live* fact you fetched this moment, as a **pointer, not
-   a report:** just the handle in one short clause (e.g. *"latest COP issue: ONR-142"* or *"newest
-   brain thought: the 6/10 scaling note"*) — **do not summarize its contents.** Proof you reached
-   the brain; the CEO verifies it in seconds.
-3. **Honest gap — one line, only if real** — e.g. "note: `~/SPOK/skills/` not present yet."
+**1. Logo** — print verbatim inside a fenced code block:
 
-Then: *"Task, or shall I propose one?"*
+```
+   ╔═╗╔═╗╔═╗╦╔═   ╔═╗╔═╗
+   ╚═╗╠═╝║ ║╠╩╗   ║ ║╚═╗
+   ╚═╝╩  ╚═╝╩ ╩   ╚═╝╚═╝
+```
 
-> **Do NOT recite "skills / permissions / brain confirmed."** Never claim a check you didn't run —
-> the **proof token IS the confirmation.** One true, falsifiable fact beats a list of claims.
-> *(Soul Refusal: never claim done unverified. Learned the hard way in the 2026-06-11 dogfood,
-> when a fresh agent "confirmed" everything after running only `cat GOAL.md`.)*
+**2. Greeting** — `Hello, Chris.`
+
+**3. Status grid** — `icon · label · one terse value`, aligned. Shape:
+
+```
+✅  Identity     <role> · <model> · soul ~/SPOK
+✅  Hippocampus  deepspok reachable
+✅  Cortex       vaults reachable
+✅  COP          ONR-### reachable
+```
+
+**4. Invitation** — `I'm ready to assist.`
+
+### The rule that makes the grid honest (do not skip)
+
+Each ✅ / ❌ is a **real check you run at boot, this moment** — call **deepspok** (Hippocampus),
+confirm the **vaults** (Cortex), query the **COP / paperclip** tool (COP; show the live issue
+handle as its value). **✅ only on genuine success; ❌ if it fails or isn't wired. Never fake a ✅**
+*(Soul Refusal: never claim done unverified — a fresh agent bluffed exactly this in the 2026-06-11
+dogfood).* Minimal words; a ❌ is honest signal — show it, don't explain it. Then stop and wait.
 
 ## The four rings, here
 
