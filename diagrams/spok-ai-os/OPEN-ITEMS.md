@@ -23,6 +23,7 @@
 ## 🧹 Open — artifacts / cleanup
 - [ ] Strip the dropped *"own the soul, rent the body"* + *"body"* language from the Desktop explainer doc + old infographic prompt.
 - [ ] **When vision locks:** back-port the editor MODEL → canonical `config.json`, regenerate, *then* graduate per gate.
+- [ ] **README prose refresh (one pass)** — the "Layers" + "Files" tables still carry v1-era names/outcomes. Update in the SAME back-port pass (after Rings 3–4) so image + text + `config.json` land together. *(Image already on v2.)*
 - [ ] NotebookLM audio/PNG redo (parked — current drafts in `drafts/` on the MINI).
 
 ## 🚧 GATE
