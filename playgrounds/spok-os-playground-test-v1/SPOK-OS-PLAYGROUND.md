@@ -24,7 +24,7 @@ So a fresh `npx create-next-app` on your desktop → `cd` → `claude` would sti
 Copy the SPOK layer into it:
 ```
 CLAUDE.md            # the activation brief (boot, grid, rings, goal)
-AGENTS.md GEMINI.md  # same, for non-Claude agents (they point to CLAUDE.md)
+AGENTS.md GEMINI.md  # same, for non-Claude agents (symlinked to CLAUDE.md — same content)
 .claude/settings.json# project permissions (the boot-check allow-list)
 scripts/boot-check.sh# the read-only boot health check
 GOAL.md              # what this project is for
