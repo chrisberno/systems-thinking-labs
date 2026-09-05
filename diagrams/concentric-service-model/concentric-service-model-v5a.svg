@@ -26,10 +26,10 @@
     </linearGradient>
 
     <marker id="arrowStart" markerWidth="4" markerHeight="4" refX="0" refY="2" orient="auto">
-      <polygon points="4 0, 0 2, 4 4" fill="#5A8AC4"/>
+      <polygon points="4 0, 0 2, 4 4" fill="var(--accent-300, #5A8AC4)"/>
     </marker>
     <marker id="arrowEnd" markerWidth="4" markerHeight="4" refX="4" refY="2" orient="auto">
-      <polygon points="0 0, 4 2, 0 4" fill="#5A8AC4"/>
+      <polygon points="0 0, 4 2, 0 4" fill="var(--accent-300, #5A8AC4)"/>
     </marker>
 
     <!-- Professional polish: arrow gradient and shadow -->
@@ -55,6 +55,27 @@
   <!-- BREATHING ANIMATION v5a - reversed wave (outer→inner) + longer hold -->
   <style>
     <![CDATA[
+      /* ---------------------------------------------------------------
+         PALETTE — change these 11 values to reskin the whole diagram.
+         Every fill and stroke below reads from these, with the original
+         hex as a fallback so the file still renders in tools that do not
+         support CSS variables in SVG (Inkscape, some PDF/print paths).
+         See FORK.md for the full reuse recipe.
+         --------------------------------------------------------------- */
+      :root {
+        --canvas: #FAFBFC;
+        --ink: #1A1A1A;
+        --halftone-outer: #6e6e6e;
+        --halftone-mid: #505050;
+        --halftone-inner: #323232;
+        --accent-100: #B8D4ED;
+        --accent-200: #7FAFD4;
+        --accent-300: #5A8AC4;
+        --accent-400: #5A7FA8;
+        --accent-500: #2E6AB3;
+        --accent-600: #1E4E8C;
+      }
+
       .data-dot {
         animation: breathe 6s ease-in-out infinite;
       }
@@ -68,250 +89,250 @@
     ]]>
   </style>
 
-  <rect width="800" height="800" fill="#FAFBFC"/>
+  <rect width="800" height="800" fill="var(--canvas, #FAFBFC)"/>
 
   <g id="halftone-effect">
-    <circle class="data-dot" cx="745.0" cy="400.0" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="743.7" cy="430.1" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="739.8" cy="459.9" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="733.2" cy="489.3" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="724.2" cy="518.0" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="712.7" cy="545.8" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="698.8" cy="572.5" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="682.6" cy="597.9" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="664.3" cy="621.8" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="644.0" cy="644.0" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="621.8" cy="664.3" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="597.9" cy="682.6" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="572.5" cy="698.8" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="545.8" cy="712.7" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="518.0" cy="724.2" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="489.3" cy="733.2" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="459.9" cy="739.8" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="430.1" cy="743.7" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="400.0" cy="745.0" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="369.9" cy="743.7" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="340.1" cy="739.8" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="310.7" cy="733.2" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="282.0" cy="724.2" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="254.2" cy="712.7" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="227.5" cy="698.8" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="202.1" cy="682.6" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="178.2" cy="664.3" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="156.0" cy="644.0" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="135.7" cy="621.8" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="117.4" cy="597.9" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="101.2" cy="572.5" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="87.3" cy="545.8" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="75.8" cy="518.0" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="66.8" cy="489.3" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="60.2" cy="459.9" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="56.3" cy="430.1" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="55.0" cy="400.0" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="56.3" cy="369.9" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="60.2" cy="340.1" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="66.8" cy="310.7" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="75.8" cy="282.0" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="87.3" cy="254.2" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="101.2" cy="227.5" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="117.4" cy="202.1" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="135.7" cy="178.2" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="156.0" cy="156.0" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="178.2" cy="135.7" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="202.1" cy="117.4" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="227.5" cy="101.2" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="254.2" cy="87.3" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="282.0" cy="75.8" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="310.7" cy="66.8" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="340.1" cy="60.2" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="369.9" cy="56.3" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="400.0" cy="55.0" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="430.1" cy="56.3" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="459.9" cy="60.2" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="489.3" cy="66.8" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="518.0" cy="75.8" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="545.8" cy="87.3" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="572.5" cy="101.2" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="597.9" cy="117.4" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="621.8" cy="135.7" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="644.0" cy="156.0" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="664.3" cy="178.2" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="682.6" cy="202.1" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="698.8" cy="227.5" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="712.7" cy="254.2" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="724.2" cy="282.0" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="733.2" cy="310.7" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="739.8" cy="340.1" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="743.7" cy="369.9" r="3.0" fill="#323232" opacity="0.70" style="animation-delay: 1.2s"/>
-    <circle class="data-dot" cx="757.5" cy="400.0" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="756.1" cy="431.2" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="752.1" cy="462.1" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="745.3" cy="492.5" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="735.9" cy="522.3" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="724.0" cy="551.1" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="709.6" cy="578.8" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="692.8" cy="605.1" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="673.9" cy="629.8" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="652.8" cy="652.8" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="629.8" cy="673.9" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="605.1" cy="692.8" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="578.8" cy="709.6" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="551.1" cy="724.0" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="522.3" cy="735.9" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="492.5" cy="745.3" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="462.1" cy="752.1" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="431.2" cy="756.1" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="400.0" cy="757.5" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="368.8" cy="756.1" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="337.9" cy="752.1" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="307.5" cy="745.3" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="277.7" cy="735.9" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="248.9" cy="724.0" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="221.3" cy="709.6" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="194.9" cy="692.8" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="170.2" cy="673.9" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="147.2" cy="652.8" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="126.1" cy="629.8" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="107.2" cy="605.1" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="90.4" cy="578.8" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="76.0" cy="551.1" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="64.1" cy="522.3" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="54.7" cy="492.5" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="47.9" cy="462.1" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="43.9" cy="431.2" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="42.5" cy="400.0" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="43.9" cy="368.8" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="47.9" cy="337.9" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="54.7" cy="307.5" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="64.1" cy="277.7" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="76.0" cy="248.9" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="90.4" cy="221.2" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="107.2" cy="194.9" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="126.1" cy="170.2" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="147.2" cy="147.2" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="170.2" cy="126.1" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="194.9" cy="107.2" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="221.2" cy="90.4" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="248.9" cy="76.0" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="277.7" cy="64.1" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="307.5" cy="54.7" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="337.9" cy="47.9" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="368.8" cy="43.9" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="400.0" cy="42.5" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="431.2" cy="43.9" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="462.1" cy="47.9" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="492.5" cy="54.7" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="522.3" cy="64.1" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="551.1" cy="76.0" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="578.8" cy="90.4" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="605.1" cy="107.2" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="629.8" cy="126.1" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="652.8" cy="147.2" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="673.9" cy="170.2" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="692.8" cy="194.9" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="709.6" cy="221.2" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="724.0" cy="248.9" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="735.9" cy="277.7" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="745.3" cy="307.5" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="752.1" cy="337.9" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="756.1" cy="368.8" r="2.8" fill="#505050" opacity="0.64" style="animation-delay: 0.6s"/>
-    <circle class="data-dot" cx="770.0" cy="400.0" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="768.6" cy="432.2" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="764.4" cy="464.2" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="757.4" cy="495.8" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="747.7" cy="526.5" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="735.3" cy="556.4" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="720.4" cy="585.0" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="703.1" cy="612.2" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="683.4" cy="637.8" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="661.6" cy="661.6" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="637.8" cy="683.4" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="612.2" cy="703.1" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="585.0" cy="720.4" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="556.4" cy="735.3" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="526.5" cy="747.7" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="495.8" cy="757.4" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="464.2" cy="764.4" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="432.2" cy="768.6" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="400.0" cy="770.0" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="367.8" cy="768.6" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="335.8" cy="764.4" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="304.2" cy="757.4" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="273.5" cy="747.7" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="243.6" cy="735.3" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="215.0" cy="720.4" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="187.8" cy="703.1" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="162.2" cy="683.4" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="138.4" cy="661.6" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="116.6" cy="637.8" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="96.9" cy="612.2" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="79.6" cy="585.0" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="64.7" cy="556.4" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="52.3" cy="526.5" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="42.6" cy="495.8" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="35.6" cy="464.2" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="31.4" cy="432.2" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="30.0" cy="400.0" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="31.4" cy="367.8" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="35.6" cy="335.8" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="42.6" cy="304.2" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="52.3" cy="273.5" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="64.7" cy="243.6" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="79.6" cy="215.0" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="96.9" cy="187.8" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="116.6" cy="162.2" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="138.4" cy="138.4" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="162.2" cy="116.6" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="187.8" cy="96.9" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="215.0" cy="79.6" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="243.6" cy="64.7" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="273.5" cy="52.3" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="304.2" cy="42.6" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="335.8" cy="35.6" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="367.8" cy="31.4" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="400.0" cy="30.0" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="432.2" cy="31.4" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="464.2" cy="35.6" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="495.8" cy="42.6" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="526.5" cy="52.3" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="556.4" cy="64.7" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="585.0" cy="79.6" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="612.2" cy="96.9" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="637.8" cy="116.6" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="661.6" cy="138.4" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="683.4" cy="162.2" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="703.1" cy="187.8" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="720.4" cy="215.0" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="735.3" cy="243.6" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="747.7" cy="273.5" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="757.4" cy="304.2" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="764.4" cy="335.8" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
-    <circle class="data-dot" cx="768.6" cy="367.8" r="2.6" fill="#6e6e6e" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="745.0" cy="400.0" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="743.7" cy="430.1" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="739.8" cy="459.9" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="733.2" cy="489.3" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="724.2" cy="518.0" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="712.7" cy="545.8" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="698.8" cy="572.5" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="682.6" cy="597.9" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="664.3" cy="621.8" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="644.0" cy="644.0" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="621.8" cy="664.3" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="597.9" cy="682.6" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="572.5" cy="698.8" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="545.8" cy="712.7" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="518.0" cy="724.2" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="489.3" cy="733.2" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="459.9" cy="739.8" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="430.1" cy="743.7" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="400.0" cy="745.0" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="369.9" cy="743.7" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="340.1" cy="739.8" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="310.7" cy="733.2" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="282.0" cy="724.2" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="254.2" cy="712.7" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="227.5" cy="698.8" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="202.1" cy="682.6" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="178.2" cy="664.3" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="156.0" cy="644.0" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="135.7" cy="621.8" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="117.4" cy="597.9" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="101.2" cy="572.5" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="87.3" cy="545.8" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="75.8" cy="518.0" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="66.8" cy="489.3" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="60.2" cy="459.9" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="56.3" cy="430.1" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="55.0" cy="400.0" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="56.3" cy="369.9" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="60.2" cy="340.1" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="66.8" cy="310.7" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="75.8" cy="282.0" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="87.3" cy="254.2" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="101.2" cy="227.5" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="117.4" cy="202.1" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="135.7" cy="178.2" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="156.0" cy="156.0" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="178.2" cy="135.7" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="202.1" cy="117.4" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="227.5" cy="101.2" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="254.2" cy="87.3" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="282.0" cy="75.8" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="310.7" cy="66.8" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="340.1" cy="60.2" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="369.9" cy="56.3" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="400.0" cy="55.0" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="430.1" cy="56.3" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="459.9" cy="60.2" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="489.3" cy="66.8" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="518.0" cy="75.8" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="545.8" cy="87.3" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="572.5" cy="101.2" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="597.9" cy="117.4" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="621.8" cy="135.7" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="644.0" cy="156.0" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="664.3" cy="178.2" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="682.6" cy="202.1" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="698.8" cy="227.5" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="712.7" cy="254.2" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="724.2" cy="282.0" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="733.2" cy="310.7" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="739.8" cy="340.1" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="743.7" cy="369.9" r="3.0" fill="var(--halftone-inner, #323232)" opacity="0.70" style="animation-delay: 1.2s"/>
+    <circle class="data-dot" cx="757.5" cy="400.0" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="756.1" cy="431.2" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="752.1" cy="462.1" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="745.3" cy="492.5" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="735.9" cy="522.3" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="724.0" cy="551.1" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="709.6" cy="578.8" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="692.8" cy="605.1" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="673.9" cy="629.8" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="652.8" cy="652.8" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="629.8" cy="673.9" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="605.1" cy="692.8" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="578.8" cy="709.6" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="551.1" cy="724.0" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="522.3" cy="735.9" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="492.5" cy="745.3" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="462.1" cy="752.1" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="431.2" cy="756.1" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="400.0" cy="757.5" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="368.8" cy="756.1" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="337.9" cy="752.1" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="307.5" cy="745.3" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="277.7" cy="735.9" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="248.9" cy="724.0" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="221.3" cy="709.6" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="194.9" cy="692.8" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="170.2" cy="673.9" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="147.2" cy="652.8" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="126.1" cy="629.8" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="107.2" cy="605.1" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="90.4" cy="578.8" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="76.0" cy="551.1" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="64.1" cy="522.3" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="54.7" cy="492.5" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="47.9" cy="462.1" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="43.9" cy="431.2" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="42.5" cy="400.0" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="43.9" cy="368.8" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="47.9" cy="337.9" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="54.7" cy="307.5" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="64.1" cy="277.7" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="76.0" cy="248.9" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="90.4" cy="221.2" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="107.2" cy="194.9" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="126.1" cy="170.2" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="147.2" cy="147.2" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="170.2" cy="126.1" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="194.9" cy="107.2" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="221.2" cy="90.4" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="248.9" cy="76.0" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="277.7" cy="64.1" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="307.5" cy="54.7" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="337.9" cy="47.9" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="368.8" cy="43.9" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="400.0" cy="42.5" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="431.2" cy="43.9" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="462.1" cy="47.9" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="492.5" cy="54.7" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="522.3" cy="64.1" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="551.1" cy="76.0" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="578.8" cy="90.4" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="605.1" cy="107.2" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="629.8" cy="126.1" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="652.8" cy="147.2" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="673.9" cy="170.2" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="692.8" cy="194.9" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="709.6" cy="221.2" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="724.0" cy="248.9" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="735.9" cy="277.7" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="745.3" cy="307.5" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="752.1" cy="337.9" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="756.1" cy="368.8" r="2.8" fill="var(--halftone-mid, #505050)" opacity="0.64" style="animation-delay: 0.6s"/>
+    <circle class="data-dot" cx="770.0" cy="400.0" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="768.6" cy="432.2" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="764.4" cy="464.2" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="757.4" cy="495.8" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="747.7" cy="526.5" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="735.3" cy="556.4" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="720.4" cy="585.0" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="703.1" cy="612.2" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="683.4" cy="637.8" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="661.6" cy="661.6" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="637.8" cy="683.4" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="612.2" cy="703.1" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="585.0" cy="720.4" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="556.4" cy="735.3" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="526.5" cy="747.7" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="495.8" cy="757.4" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="464.2" cy="764.4" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="432.2" cy="768.6" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="400.0" cy="770.0" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="367.8" cy="768.6" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="335.8" cy="764.4" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="304.2" cy="757.4" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="273.5" cy="747.7" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="243.6" cy="735.3" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="215.0" cy="720.4" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="187.8" cy="703.1" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="162.2" cy="683.4" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="138.4" cy="661.6" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="116.6" cy="637.8" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="96.9" cy="612.2" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="79.6" cy="585.0" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="64.7" cy="556.4" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="52.3" cy="526.5" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="42.6" cy="495.8" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="35.6" cy="464.2" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="31.4" cy="432.2" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="30.0" cy="400.0" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="31.4" cy="367.8" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="35.6" cy="335.8" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="42.6" cy="304.2" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="52.3" cy="273.5" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="64.7" cy="243.6" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="79.6" cy="215.0" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="96.9" cy="187.8" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="116.6" cy="162.2" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="138.4" cy="138.4" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="162.2" cy="116.6" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="187.8" cy="96.9" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="215.0" cy="79.6" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="243.6" cy="64.7" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="273.5" cy="52.3" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="304.2" cy="42.6" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="335.8" cy="35.6" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="367.8" cy="31.4" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="400.0" cy="30.0" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="432.2" cy="31.4" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="464.2" cy="35.6" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="495.8" cy="42.6" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="526.5" cy="52.3" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="556.4" cy="64.7" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="585.0" cy="79.6" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="612.2" cy="96.9" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="637.8" cy="116.6" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="661.6" cy="138.4" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="683.4" cy="162.2" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="703.1" cy="187.8" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="720.4" cy="215.0" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="735.3" cy="243.6" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="747.7" cy="273.5" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="757.4" cy="304.2" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="764.4" cy="335.8" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
+    <circle class="data-dot" cx="768.6" cy="367.8" r="2.6" fill="var(--halftone-outer, #6e6e6e)" opacity="0.57" style="animation-delay: 0.0s"/>
   </g>
 
-  <circle cx="400" cy="400" r="340" fill="url(#outerRingGradient)" stroke="#1E4E8C" stroke-width="3"/>
+  <circle cx="400" cy="400" r="340" fill="url(#outerRingGradient)" stroke="var(--accent-600, #1E4E8C)" stroke-width="3"/>
 
-  <text font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1A1A1A" letter-spacing="2">
+  <text font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="var(--ink, #1A1A1A)" letter-spacing="2">
     <textPath href="#topTextPath" startOffset="50%" text-anchor="middle">Community Connection Layer</textPath>
   </text>
 
-  <circle cx="400" cy="400" r="280" fill="url(#middleLayerGradient)" stroke="#B8D4ED" stroke-width="1"/>
+  <circle cx="400" cy="400" r="280" fill="url(#middleLayerGradient)" stroke="var(--accent-100, #B8D4ED)" stroke-width="1"/>
 
   <path d="M 166 265 A 270 270 0 0 1 634 265 L 582 295 A 210 210 0 0 0 218 295 Z"
-        fill="white" stroke="#2E6AB3" stroke-width="1.5" filter="url(#segmentShadow)"/>
-  <text font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1A1A1A" dominant-baseline="middle">
+        fill="white" stroke="var(--accent-500, #2E6AB3)" stroke-width="1.5" filter="url(#segmentShadow)"/>
+  <text font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="var(--ink, #1A1A1A)" dominant-baseline="middle">
     <textPath href="#engageTextPath" startOffset="50%" text-anchor="middle">CONNECT</textPath>
   </text>
 
   <path d="M 634 265 A 270 270 0 0 1 400 670 L 400 610 A 210 210 0 0 0 582 295 Z"
-        fill="white" stroke="#2E6AB3" stroke-width="1.5" filter="url(#segmentShadow)"/>
-  <text font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1A1A1A" dominant-baseline="middle">
+        fill="white" stroke="var(--accent-500, #2E6AB3)" stroke-width="1.5" filter="url(#segmentShadow)"/>
+  <text font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="var(--ink, #1A1A1A)" dominant-baseline="middle">
     <textPath href="#serveTextPath" startOffset="50%" text-anchor="middle">ENGAGE</textPath>
   </text>
 
   <path d="M 400 670 A 270 270 0 0 1 166 265 L 218 295 A 210 210 0 0 0 400 610 Z"
-        fill="white" stroke="#2E6AB3" stroke-width="1.5" filter="url(#segmentShadow)"/>
-  <text font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1A1A1A" dominant-baseline="middle">
+        fill="white" stroke="var(--accent-500, #2E6AB3)" stroke-width="1.5" filter="url(#segmentShadow)"/>
+  <text font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="var(--ink, #1A1A1A)" dominant-baseline="middle">
     <textPath href="#connectTextPath" startOffset="50%" text-anchor="middle">SERVE</textPath>
   </text>
 
@@ -322,24 +343,24 @@
   <!-- Arrow 3: top-left (SERVE→CONNECT) -->
   <polygon points="166,265 218,295 210,250" fill="url(#arrowGradient)" stroke="white" stroke-width="1.5" filter="url(#arrowShadow)"/>
 
-  <circle cx="400" cy="400" r="195" fill="url(#networkLayerGradient)" stroke="#7FAFD4" stroke-width="2"/>
-  <circle cx="400" cy="400" r="145" fill="white" stroke="#B8D4ED" stroke-width="1"/>
+  <circle cx="400" cy="400" r="195" fill="url(#networkLayerGradient)" stroke="var(--accent-200, #7FAFD4)" stroke-width="2"/>
+  <circle cx="400" cy="400" r="145" fill="white" stroke="var(--accent-100, #B8D4ED)" stroke-width="1"/>
 
-  <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E6AB3">
+  <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="var(--accent-500, #2E6AB3)">
     <textPath href="#networkTextPath" startOffset="50%" text-anchor="middle">Ecosystem Network Layer</textPath>
   </text>
-  <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#5A7FA8">
+  <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="var(--accent-400, #5A7FA8)">
     <textPath href="#apiTextPath" startOffset="50%" text-anchor="middle">API Layer</textPath>
   </text>
 
-  <line x1="400" y1="262" x2="400" y2="298" stroke="#5A8AC4" stroke-width="1.5"
+  <line x1="400" y1="262" x2="400" y2="298" stroke="var(--accent-300, #5A8AC4)" stroke-width="1.5"
         marker-start="url(#arrowStart)" marker-end="url(#arrowEnd)"/>
-  <line x1="520" y1="469" x2="488" y2="451" stroke="#5A8AC4" stroke-width="1.5"
+  <line x1="520" y1="469" x2="488" y2="451" stroke="var(--accent-300, #5A8AC4)" stroke-width="1.5"
         marker-start="url(#arrowStart)" marker-end="url(#arrowEnd)"/>
-  <line x1="280" y1="469" x2="312" y2="451" stroke="#5A8AC4" stroke-width="1.5"
+  <line x1="280" y1="469" x2="312" y2="451" stroke="var(--accent-300, #5A8AC4)" stroke-width="1.5"
         marker-start="url(#arrowStart)" marker-end="url(#arrowEnd)"/>
 
-  <circle cx="400" cy="400" r="95" fill="url(#centerGradient)" stroke="#1E4E8C" stroke-width="3"/>
+  <circle cx="400" cy="400" r="95" fill="url(#centerGradient)" stroke="var(--accent-600, #1E4E8C)" stroke-width="3"/>
   <text x="400" y="393" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Data</text>
   <text x="400" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Center</text>
 

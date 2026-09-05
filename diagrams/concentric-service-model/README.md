@@ -4,6 +4,15 @@
 
 ![Concentric Service Model](concentric-service-model-v5a.svg)
 
+## Reusing this diagram
+
+**→ [`FORK.md`](FORK.md)** — the reuse recipe: the 11-value palette block, the 8 editable
+labels with line numbers, the halftone generator flags, and the gotchas. Written for an
+agent picking this up cold.
+
+`config.json` is **metadata, not a control panel.** It describes the finished diagram for
+search and cataloguing; nothing reads it at render time. Edit the SVG.
+
 ## Overview
 
 A **Platform Ecosystem Diagram** showing how the platform wraps community touchpoints around a cyclical engagement engine, with data flowing through an ecosystem network to a central data layer.
@@ -37,7 +46,7 @@ A **Platform Ecosystem Diagram** showing how the platform wraps community touchp
 | `concentric-service-model-v4.svg` | Static version - print/documents |
 | `systems-architecture-...v5a.mov` | Video export - PowerPoint presentations |
 | `notes.md` | Detailed interpretation and technical notes |
-| `config.json` | Searchable metadata |
+| `config.json` | Searchable metadata **only — nothing reads it at render time** |
 
 ## Design Decisions
 
