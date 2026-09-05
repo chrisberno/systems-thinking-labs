@@ -1,0 +1,62 @@
+{
+  "title": "THE SPOK OS",
+  "subtitle": "An AI Operating System — soul made explicit, germline-sourced",
+  "footer": "interactive editor · mirrors config.json · edit the data, never the picture",
+  "canvas": {
+    "width": 1340,
+    "height": 840,
+    "cx": 392,
+    "cy": 430
+  },
+  "pngScale": 2,
+  "rings": [
+    {
+      "id": "connectors",
+      "label": "CONNECTORS",
+      "sublabel": "MCP — the I/O membrane",
+      "radius": 350,
+      "fill": "#E6D9B0",
+      "outcomeLabel": "CONNECTORS · MCP",
+      "outcome": "ACCESSES YOUR TOOLS",
+      "outcomeFill": "#E6D9B0",
+      "source": "~/SPOK/mcp/ + registered MCPs",
+      "accent": false
+    },
+    {
+      "id": "capabilities",
+      "label": "CAPABILITIES",
+      "sublabel": "skills · routines · loops",
+      "radius": 268,
+      "fill": "#F1EAD2",
+      "outcomeLabel": "SKILLS · ROUTINES · LOOPS",
+      "outcome": "AUTOMATES YOUR WORK",
+      "outcomeFill": "#F1EAD2",
+      "source": "~/SPOK/skills/ — germline (pending)",
+      "accent": false
+    },
+    {
+      "id": "context",
+      "label": "CONTEXT",
+      "sublabel": "deepspok + vaults",
+      "radius": 188,
+      "fill": "#CDE3C6",
+      "outcomeLabel": "THE BRAIN",
+      "outcome": "UNDERSTANDS YOUR BUSINESS",
+      "outcomeFill": "#CDE3C6",
+      "source": "deepspok (hippocampus) + vaults (cortex)",
+      "accent": false
+    },
+    {
+      "id": "core",
+      "label": "AI AGENT",
+      "sublabel": "body + soul",
+      "radius": 100,
+      "fill": "#FFFFFF",
+      "outcomeLabel": "SOUL · JUDGMENT",
+      "outcome": "CARRIES YOUR JUDGMENT  ★",
+      "outcomeFill": "#F6E6A8",
+      "source": "body = rented · soul = CLAUDE.md + agents/",
+      "accent": true
+    }
+  ]
+}
